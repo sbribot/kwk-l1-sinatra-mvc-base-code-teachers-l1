@@ -10,7 +10,7 @@ class MyApp < Sinatra::Base
   post '/sample' do
     @x = params["firstnumber"].to_i
     @y = params["lastnumber"].to_i
-    @ans = multiply(@x,@y)
+    @ans = multiply(x,y)
     erb :results
 end 
 end
