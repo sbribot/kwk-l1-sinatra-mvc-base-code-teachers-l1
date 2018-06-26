@@ -7,7 +7,7 @@ class MyApp < Sinatra::Base
     erb :index
   end
   
-  post '/sample' do
+  post '/' do
     @x = params["firstnumber"].to_i
     @y = params["lastnumber"].to_i
     @ans = multiply(@x,@y)
