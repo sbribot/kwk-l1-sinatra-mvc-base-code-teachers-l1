@@ -1,6 +1,8 @@
 require 'bundler'
 Bundler.require
 
+require 'model.rb'
+
 class MyApp < Sinatra::Base
 
   get '/' do
